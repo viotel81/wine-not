@@ -1,0 +1,59 @@
+.settings {
+    width: 80%;
+    padding: 20px;
+    font-family: 'Josefin Slab', sans-serif;
+    color: #2C3531;
+}
+
+.settingsUpdateTitle {
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+
+.settingsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.settingsForm>label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.settingsForm>input {
+    margin: 10px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #2C3531;
+    width: 80%;
+    background-color: #D1E8E2;
+}
+
+.settingsForm>input:focus {
+    outline: none;
+}
+
+.settingsSubmit {
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: azure;
+    background-color: #116466;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.profileUpdated {
+    margin-top: 10px;
+    align-self: center;  
+    color: #116466;
+    font-size: 25px;
+    font-weight: 700;
+}
