@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif
+}
+
+:root{
+    --txt: #262626;
+    --button:#acbfa4;
+    --bg: #e2e8ce;
+    --c1:#D9B08C;
+    --c2:#d2d68d;
+    --c3:#116466;
+}
+
+
+.btn {
+  background-color:var(--c3);
+  color: var(--c1)
+}
+
+.picture {
+  border: 2px solid black;
+}
+
+
+.bottle { display: flex;
+  align-items:center; 
+}
+
+.row {
+  background-color: var(--bg);
+  min-height: 40vh;
+}  
