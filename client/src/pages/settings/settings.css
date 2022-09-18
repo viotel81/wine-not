@@ -37,6 +37,14 @@
     outline: none;
 }
 
+.settingsFooter {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 .settingsSubmit {
     width: 150px;
     border: none;
@@ -44,7 +52,6 @@
     color: azure;
     background-color: #116466;
     padding: 10px;
-    margin-top: 20px;
     cursor: pointer;
     font-size: 20px;
     font-weight: 700;
@@ -52,8 +59,26 @@
 
 .profileUpdated {
     margin-top: 10px;
-    align-self: center;  
+    align-self: center;
     color: #116466;
     font-size: 25px;
+    font-weight: 700;
+}
+
+.settingsBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.backIcon {
+    margin-right: 8px;
+    color: #116466;
+}
+
+.settingsBack span {
+    font-size: 18px;
+    color: #116466;
     font-weight: 700;
 }

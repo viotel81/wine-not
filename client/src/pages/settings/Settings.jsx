@@ -3,6 +3,7 @@ import axios from "axios";
 import { Context } from "../../context/Context";
 import { useContext, useState } from "react";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Settings() {
   const { user, dispatch } = useContext(Context);
@@ -54,9 +55,17 @@ export default function Settings() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <button className="settingsSubmit" type="submit">
-            Update
-          </button>
+          <div className="settingsFooter">
+            <button className="settingsSubmit" type="submit">
+              Update
+            </button>
+            <div className="settingsBack">
+              <Link className="link" to={"/"}>
+                <i className="backIcon fa-solid fa-arrow-left"></i>
+                <span>Back to Blog</span>
+              </Link>
+            </div>
+          </div>
           {success && (
             <span className="profileUpdated">Profile is updated!</span>
           )}

@@ -86,7 +86,7 @@ const SinglePost = () => {
           className="editText"
           type="text"
           value={description}
-          autofocus
+          autoFocus
           onChange={(e) => setDescription(e.target.value)}
         />
       ) : (
@@ -100,7 +100,7 @@ const SinglePost = () => {
         <div className="singlePostBack">
           <Link className="link" to={"/"}>
             <i className="backIcon fa-solid fa-arrow-left"></i>
-            <span>Go Back</span>
+            <span>Back to Blog</span>
           </Link>
         </div>
       )}

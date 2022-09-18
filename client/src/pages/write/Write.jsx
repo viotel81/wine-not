@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { Context } from "../../context/Context";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Write = () => {
   const [title, setTitle] = useState("");
@@ -72,9 +73,17 @@ const Write = () => {
             onChange={(e) => setDescription(e.target.value)}
           ></textarea>
         </div>
-        <button className="writeSubmit" type="submit">
-          Publish
-        </button>
+        <div className="writeFooter">
+          <button className="writeSubmit" type="submit">
+            Publish
+          </button>
+          <div className="writeBack">
+            <Link className="link" to={"/"}>
+              <i className="backIcon fa-solid fa-arrow-left"></i>
+              <span>Back to Blog</span>
+            </Link>
+          </div>
+        </div>
       </form>
     </Container>
   );

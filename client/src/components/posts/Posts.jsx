@@ -4,8 +4,8 @@ import Post from "../../components/post/Post";
 const Posts = ({ posts }) => {
   return (
     <div className="posts">
-      {posts.map((p, index) => (
-        <Post key={index} post={p} />
+      {posts.map((p) => (
+        <Post key={p._id} post={p} />
       ))}
     </div>
   );

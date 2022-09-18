@@ -46,11 +46,19 @@
     border-style: none;
     padding: 20px;
     background-color: azure;
-    border-radius: 5px;;
+    border-radius: 5px;
+    ;
 }
 
 .writeInput:focus {
     outline: none;
+}
+
+.writeFooter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .writeSubmit {
@@ -62,4 +70,22 @@
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.writeBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.backIcon {
+    margin-right: 8px;
+    color: #116466;    
+}
+
+.writeBack span {
+    font-size: 18px;
+    color: #116466;
+    font-weight: 700;
 }

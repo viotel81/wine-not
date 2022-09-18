@@ -1,0 +1,19 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.paginationButton {
+    padding: 5px;
+    width: 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: azure;
+    font-size: 18px;
+    font-weight: 500;
+}
+
