@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+  }
+  
+  :root {
+    --clr-light-1: #f9f9ec;
+    --clr-light-2: #f5f7e4;
+    --clr-accent-1: #69925a;
+    --clr-accent-2: #344814;
+    --clr-dark-1: #13180c;
+  
+    --ff-primary: 'Outfit', sans-serif;
+  }
+  
+  body {
+    color: var(--clr-dark-1);
+    text-align: center;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: var(--clr-light-1);
+  }
+  
+  .menuTitle {
+    color: var(--clr-accent-2);
+  }
+  
+  .menuLink {
+    text-decoration: none;
+    color: var(--clr-dark-1);
+  }
+  
+  .menuLink:hover {
+    color: var(--clr-accent-1);
+  }
+  
+  .icon {
+    margin: 0 5px;
+    color: var(--clr-accent-1);
+  }
+  
+  .bottomLine {
+    font-size: 0.7rem;
+  }
