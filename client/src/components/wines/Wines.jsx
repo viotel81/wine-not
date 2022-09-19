@@ -1,15 +1,15 @@
 import { useEffect } from 'react';
-import Item from '../item/item';
-import './items.css';
+import Wine from '../wine/Wine';
+import './wines.css';
 
 
-function Items() {
+function Wines() {
     return (
         <>
-            <div className="main">
+            <div className="winesmain">
                 <h3><b>Take You Time and Enjoy the Tasty of the <br />World of Wines</b></h3>
 
-                <Item />
+                <Wine />
             </div>
         </>
     )
@@ -30,7 +30,7 @@ function Items() {
 
 // AR FETCHINMUI REIKIA ISIDIEGTI npm add axios?
 
-export default Items;
+export default Wines;
 
 // HOME PUSLPAYJE DARO FETCH
 

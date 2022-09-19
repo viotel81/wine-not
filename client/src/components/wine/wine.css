@@ -25,12 +25,7 @@
   color: var(--c1)
 }
 
-.picture {
-  border: 2px solid black;
-}
-
-
-.bottle { display: flex;
+.winePhoto { display: flex;
   align-items:center; 
 }
 

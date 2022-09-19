@@ -29,10 +29,10 @@
     font-size: 2em;
 
 }
-.header {
+.catheader {
     min-height: 35vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)),url(../background/grapes-gad8cbdf21_1920.jpg) ;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)),url(../../../public/images/catalogue_main_bg.jpg) ;
     background-position: center;
     background-size: cover;
     /* background-attachment: fixed; */
@@ -41,7 +41,7 @@
     align-items:center;
     position: relative;
 }
-.header h1{
+.catheader h1{
     color: var(--c2);
     font-size: 3em ;
     border: 1px solid;

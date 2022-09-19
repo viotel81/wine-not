@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+
+* {
+    font-family: 'Outfit', sans-serif
+}
+
+:root{
+    --txt: #262626;
+    --button:#acbfa4;
+    --bg: #e2e8ce;
+    --c1:#D9B08C;
+    --c2:#d2d68d;
+    --c3:#116466;
+}
+
+
+.manage {
+    padding-top: 50px;
+    background-color: var(--bg);
+    
+}
+
+.manageForm{
+    margin: 50px auto 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #2C3531;
+}
+
+.manageFormGroup {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.manageIcon{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(121, 118, 118);
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.manageImg {
+    margin-left: 150px;
+    width: 90%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: none;
+}
+
+
+.manageInput {
+    width: 100%;
+    font-size: 20px;
+    border-style: none;
+    padding: 20px;
+    background-color: var(--c2);
+    border-radius: 5px;
+    ;
+}
+
+.managePrice {
+    width: 20%;
+}
+
+.manageSubmit {
+    color: whitesmoke;
+    background-color:var(--c3);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+

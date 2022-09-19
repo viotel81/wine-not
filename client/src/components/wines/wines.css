@@ -20,7 +20,7 @@
 }
 
 
-.main h3 {
+.winesmain h3 {
   color: var(--txt);
   font-size: 2em;
   padding: 0.3em; 
@@ -31,7 +31,7 @@
   
 }
 
-.main {
+.winesmain {
   background-color: var(--bg);
   min-height: 65vh;
   width: 100%;

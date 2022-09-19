@@ -1,10 +1,9 @@
-import React from 'react';
-import './header.css';
+import './catalogueheader.css';
 
-function Header() {
+function CatalogueHeader() {
     return(
         <>
-        <div className="header">
+        <div className="catheader">
             <div className="logo">Wine-not?</div>
             <h1>Wines' Catalogue</h1>
         </div>
@@ -12,4 +11,4 @@ function Header() {
     )
 };
 
-export default Header;
+export default CatalogueHeader;
