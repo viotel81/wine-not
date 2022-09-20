@@ -18,4 +18,5 @@
 
 .paginationButton:hover {
     background-color: var(--clr-links-hover);
+    color: var(--clr-secondary);
 }
