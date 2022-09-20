@@ -1,5 +1,10 @@
-.carousel {
-    color: var(--clr-secondary);
+.carousel-inner {
+    max-height: 770px;
+    color: var(--bg-light);
+}
+
+.carousel-caption {
+    bottom: 15%;
 }
 
 .sliderImage {
@@ -26,7 +31,11 @@
     float: right;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
+    .carousel-inner {
+        max-height: unset;
+        color: var(--bg-light);
+    }  
 
     .slide1,
     .slide2,
@@ -36,5 +45,9 @@
 
     .sliderImage {
         height: 80vh;
+    }
+
+    .carousel-caption {
+        bottom: 10%;
     }
 }

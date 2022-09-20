@@ -24,19 +24,19 @@ const Registration = () => {
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>
-            Please fill out the fields to book your spot:
+            Please fill out the fields to book your spot
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
             <Form.Group className="form-group mb-3" controlId="formBasicName">
-              <Form.Control type="text" placeholder="Your name" required />
+              <input type="text" placeholder="Your name" required />
             </Form.Group>
             <Form.Group className="form-group mb-3" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Your email" required />
+              <input type="email" placeholder="Your email" required />
             </Form.Group>
             <Form.Group className="form-group mb-3" controlId="formBasicMessage">
-              <Form.Control type="text" placeholder="Message" required />
+              <textarea type="text" placeholder="Message" required />
             </Form.Group>
           </Form>
         </Modal.Body>

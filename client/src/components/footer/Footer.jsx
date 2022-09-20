@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <div className="row pt-5">
+        <div className="row pt-3">
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
             {!user ? (
               <>
@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase p-2 menuTitle text-center">
-              Visit Us:
+              Visit Us
             </h5>
             <ul className="list-unstyled">
               <li>

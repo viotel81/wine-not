@@ -12,7 +12,7 @@ function Slider() {
           alt="grapes"
         />
         <Carousel.Caption>
-          <div className="col-lg-8 col-md-8 col-sm-12 slide1">
+          <div className="col-md-8 col-sm-12 slide1">
             <h1>Wine-not taste the best wine</h1>            
           </div>
         </Carousel.Caption>
@@ -24,8 +24,8 @@ function Slider() {
           alt="wine yard about wine-not"
         />
         <Carousel.Caption>
-          <div className="col-lg-6 col-md-6 col-sm-12 slide2">
-            <h1>About us</h1>
+          <div className="col-md-6 col-sm-12 slide2">
+            <h1>ABOUT US</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
               aliquid ea rem veritatis quod, labore earum! Sunt iste tempore

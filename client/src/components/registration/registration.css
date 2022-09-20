@@ -2,10 +2,34 @@
     background-color: var(--bg-light);
 }
 
+.modal-title {
+    padding-top: 10px;
+    color: var(--bg-dark);
+    text-align: center;
+}
+
 .form-control {
     background-color: var(--bg-medium);
 }
 
-#formBasicMessage {
-    height: 100px;
+.form-group input:focus {
+    outline: none;
+}
+
+.form-group input,
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--bg-medium);
+    padding: 10px;
+    border: none;
+}
+
+.form-group textarea {
+    height: 200px;
+}
+
+
+.form-group textarea:focus {
+    outline: none;
 }
