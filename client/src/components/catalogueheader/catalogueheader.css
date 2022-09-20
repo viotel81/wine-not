@@ -1,50 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
-
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Outfit', sans-serif
-}
-
-:root{
-    --txt: #262626;
-    --button:#acbfa4;
-    --bg: #e2e8ce;
-    --c1:#D9B08C;
-    --c2:#d2d68d;
-    --c3:#116466;
-}
-
-.logo {
-    color: var(--txt);
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    font-size: 18px;
-    font-family: 'Damion', cursive;
-    font-size: 2em;
-
-}
 .catheader {
     min-height: 35vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)),url(../../../public/images/catalogue_main_bg.jpg) ;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)), url(../../../public/images/catalogue_main_bg.jpg);
     background-position: center;
     background-size: cover;
     /* background-attachment: fixed; */
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     position: relative;
 }
-.catheader h1{
-    color: var(--c2);
-    font-size: 3em ;
+
+.catheader h1 {
+    font-size: 3em;
     border: 1px solid;
-    padding: 0.2em; 
-    text-align: center; 
+    padding: 0.2em;
+    text-align: center;
+    color: var(--bg-light);
+    font-family: var(--ff-titles);
+    text-transform: uppercase;
 }

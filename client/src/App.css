@@ -1,8 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-light: #FFF9EB;
+    --bg-medium: #E6E0c7;
+    --bg-dark: #4C8787;
+    --clr-gold:#f5ead7;
+    --clr-primary: #0A032A;
+    --clr-secondary: #F3F6FF;
+    --btn-main: #4C8787;
+    --btn-hover: #A4CAC8;
+    --clr-links: #4C8787;
+    --clr-links-hover: #79ACA9;
+    --ff-primary: 'Josefin Sans', serif;
+    --ff-text: 'Josefin Slab', serif;
+    --ff-titles: 'Lora', serif;
+    font-size: 18px;
+}
+
+body {
+    color: var(--clr-primary);
+    font-family: var(--ff-primary);
+    height: 100vh;
+}
+
 .link {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .link:hover {
-    color: inherit;
+    color: var(--clr-links);
 }

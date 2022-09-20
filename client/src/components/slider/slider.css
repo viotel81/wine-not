@@ -1,3 +1,7 @@
+.carousel {
+    color: var(--clr-secondary);
+}
+
 .sliderImage {
     height: 100vh;
     opacity: 0.6;
@@ -8,13 +12,12 @@
 }
 
 .sectionColor {
-    background-color: rgba(19, 24, 12, 0.8);
+    background-color: var(--bg-dark);
 }
 
 .slide1,
 .slide2,
 .slide3 {
-    color: var(--clr-light-2);
     margin-bottom: 140px;
 }
 

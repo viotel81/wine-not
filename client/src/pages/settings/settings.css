@@ -1,14 +1,12 @@
 .settings {
     width: 80%;
     padding: 20px;
-    font-family: 'Josefin Slab', sans-serif;
-    color: #2C3531;
+    margin: 20px auto;
 }
 
 .settingsUpdateTitle {
-    font-size: 30px;
+    font-size: 1.8rem;
     margin-bottom: 30px;
-
 }
 
 .settingsForm {
@@ -19,18 +17,21 @@
 }
 
 .settingsForm>label {
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 500;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 .settingsForm>input {
     margin: 10px;
-    height: 30px;
+    height: 40px;
     border: none;
-    border-bottom: 1px solid #2C3531;
+    border-bottom: 1px solid #999;
+    border-radius: 5px;
     width: 80%;
-    background-color: #D1E8E2;
+    background-color: var(--bg-medium);
+    padding: 10px;
 }
 
 .settingsForm>input:focus {
@@ -46,22 +47,28 @@
 }
 
 .settingsSubmit {
-    width: 150px;
+    width: 100px;
     border: none;
     border-radius: 10px;
-    color: azure;
-    background-color: #116466;
+    color: var(--clr-secondary);
+    background-color: var(--btn-main);
     padding: 10px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 0.9rem;
     font-weight: 700;
+    font-family: var(--ff-primary);
+}
+
+.settingsSubmit:hover {
+    background-color: var(--btn-hover);
+    color: var(--clr-primary);
 }
 
 .profileUpdated {
     margin-top: 10px;
     align-self: center;
-    color: #116466;
-    font-size: 25px;
+    color: var(--clr-links);
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -74,11 +81,10 @@
 
 .backIcon {
     margin-right: 8px;
-    color: #116466;
+    color: var(--clr-links);
 }
 
 .settingsBack span {
-    font-size: 18px;
-    color: #116466;
+    color: var(--clr-links);
     font-weight: 700;
 }

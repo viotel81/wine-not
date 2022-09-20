@@ -60,7 +60,7 @@ export default function Settings() {
               Update
             </button>
             <div className="settingsBack">
-              <Link className="link" to={"/"}>
+              <Link className="link" to={"/blog"}>
                 <i className="backIcon fa-solid fa-arrow-left"></i>
                 <span>Back to Blog</span>
               </Link>

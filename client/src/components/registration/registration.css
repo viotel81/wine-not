@@ -1,0 +1,11 @@
+.modal-content {
+    background-color: var(--bg-light);
+}
+
+.form-control {
+    background-color: var(--bg-medium);
+}
+
+#formBasicMessage {
+    height: 100px;
+}

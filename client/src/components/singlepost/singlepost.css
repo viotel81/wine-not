@@ -19,8 +19,9 @@
 .singlePostTitle {
     text-align: center;
     margin: 20px auto;
-    font-family: 'Lora', serif;
-    font-size: 30px;
+    font-family: var(--ff-titles);
+    font-style: italic;
+    font-size: 2rem;
 }
 
 .singlePostInfo {
@@ -32,7 +33,7 @@
 
 .editIcon {
     cursor: pointer;
-    color: #116466;
+    color: var(--btn-main);
 }
 
 .trashIcon {
@@ -42,18 +43,19 @@
 }
 
 .singlePostDate {
-    font-size: 18px;
+    color: #999;
+    font-size: 0.9rem;
 }
 
 .singlePostText {
-    font-size: 18px;
-    line-height: 25px;
+    font-family: var(--ff-text);
+    line-height: 1.5rem;
     margin-top: 20px;
 }
 
 .singlePostText::first-letter {
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -67,22 +69,21 @@
 
 .backIcon {
     margin-right: 8px;
-    color: #116466;
+    color: var(--clr-links);
 }
 
 .singlePostBack span {
-    font-size: 18px;
-    color: #116466;
+    color: var(--clr-links);
     font-weight: 700;
 }
 
 .editTitle {
     width: 100%;
     margin: 10px;
-    font-size: 28px;
+    font-size: 1.5rem;
     border: none;
     border-bottom: 1px solid #999;
-    background-color: azure;
+    background-color: var(--clr-gold);
     border-radius: 5px;
     padding: 5px;
 }
@@ -93,14 +94,14 @@
 
 .editText {
     width: 100%;
-    font-size: 18px;
-    line-height: 25px;
+    line-height: 1.5rem;
     border: none;
     margin: 20px auto;
     min-height: 250px;
     border-radius: 5px;
-    background-color: azure;
+    background-color: var(--clr-gold);
     padding: 10px;
+    font-family: var(--ff-text);
 }
 
 .editText:focus {
@@ -109,14 +110,14 @@
 
 .saveChangesButton {
     border: none;
-    background-color: #116466;
+    background-color: var(--btn-main);
     padding: 10px;
     width: 100px;
-    font-size: 20px;
+    font-size: 0.9rem;
     font-weight: 700;
     border-radius: 5px;
     margin-top: 10px;
-    color: azure;
+    color: var(--clr-secondary);
     cursor: pointer;
     align-self: flex-end;
 }

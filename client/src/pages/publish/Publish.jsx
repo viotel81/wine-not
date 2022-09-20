@@ -1,4 +1,4 @@
-import "./write.css";
+import "./publish.css";
 import axios from "axios";
 import { useState } from "react";
 import { useContext } from "react";
@@ -78,7 +78,7 @@ const Write = () => {
             Publish
           </button>
           <div className="writeBack">
-            <Link className="link" to={"/"}>
+            <Link className="link" to={"/blog"}>
               <i className="backIcon fa-solid fa-arrow-left"></i>
               <span>Back to Blog</span>
             </Link>

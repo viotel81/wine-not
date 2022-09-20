@@ -7,12 +7,11 @@
     background: url("https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Josefin Slab', sans-serif;
-    color: #2C3531;
 }
 
 .loginTitle {
     font-size: 50px;     
+    color: var(--clr-links);     
 }
 
 .loginForm {
@@ -23,13 +22,12 @@
 
 .loginForm > label {
     margin: 10px 0; 
-    font-size: 18px; 
     font-weight: 500;  
 }
 
 .loginForm > input {
     padding: 10px;
-    background-color:#D1E8E2;
+    background-color:var(--clr-gold);
     border: none;
     border-radius: 5px;    
     min-width: 300px;
@@ -38,13 +36,18 @@
 .loginButton {
     margin-top: 20px;
     cursor: pointer;
-    background-color: #116466;
+    background-color: var(--btn-main);
     border: none;
-    color: azure;
+    color: var(--clr-secondary);
     border-radius: 5px;
     padding: 10px;    
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 700;
+}
+
+.loginButton:hover {
+    background-color: var(--btn-hover);
+    color: var(--clr-primary);
 }
 
 .loginButton:disabled {

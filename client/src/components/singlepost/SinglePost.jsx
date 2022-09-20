@@ -56,7 +56,7 @@ const SinglePost = () => {
           className="editTitle"
           type="text"
           value={title}
-          autofocus
+          autoFocus
           onChange={(e) => setTitle(e.target.value)}
         />
       ) : (
@@ -98,7 +98,7 @@ const SinglePost = () => {
         </button>
       ) : (
         <div className="singlePostBack">
-          <Link className="link" to={"/"}>
+          <Link className="link" to={"/blog"}>
             <i className="backIcon fa-solid fa-arrow-left"></i>
             <span>Back to Blog</span>
           </Link>

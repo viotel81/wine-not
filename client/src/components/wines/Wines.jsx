@@ -2,12 +2,11 @@ import { useEffect } from 'react';
 import Wine from '../wine/Wine';
 import './wines.css';
 
-
 function Wines() {
     return (
         <>
             <div className="winesmain">
-                <h3><b>Take You Time and Enjoy the Tasty of the <br />World of Wines</b></h3>
+                <h3><b>Take Your Time and Enjoy the Tasty of the <br />World of Wines</b></h3>
 
                 <Wine />
             </div>

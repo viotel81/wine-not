@@ -24,23 +24,22 @@
 }
 
 .postTitle {
-    font-family: 'Lora', serif;
-    font-size: 28px;
+    font-family: var(--ff-titles);
+    font-style: italic;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
 .postDate {
-    font-family: 'Lora', serif;
-    font-size: 15px;
+    font-size: 0.9rem;
     color: #999;
     margin-top: 15px;
 }
 
 .postText {
-    font-family: 'Josefin Slab', serif;
-    font-size: 18px;
+    font-family: var(--ff-text);
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5rem;
     margin-top: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -51,19 +50,19 @@
 
 .postReadMore {
     border: none;
-    background-color: #116466;
+    background-color: var(--btn-main);
     padding: 7px;
     width: 110px;
-    font-family: 'Josefin Slab', sans-serif;
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 500;
     border-radius: 5px;
     margin-top: 10px;
-    color: azure;
+    color: var(--clr-secondary);
     align-self: flex-start;
     cursor: pointer;
 }
 
 .postReadMore:hover {
-    background-color: #5D8B84;
+    background-color: var(--btn-hover);
+    color: var(--clr-primary);
 }

@@ -12,8 +12,10 @@
     margin-right: 10px;
     border: none;
     border-radius: 5px;
-    background-color: azure;
-    font-size: 18px;
+    background-color: var(--bg-medium);
     font-weight: 500;
 }
 
+.paginationButton:hover {
+    background-color: var(--clr-links-hover);
+}

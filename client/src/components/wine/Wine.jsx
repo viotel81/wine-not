@@ -1,11 +1,10 @@
 import './wine.css';
 
-
 function Wine() {
     return (
         <>
             <div className="container">
-                <div className="row shadow-lg p-3 rounded">
+                <div id="wineRow" className="row shadow-lg p-3 rounded">
                     <div className="winePhoto col-sm-6 shadow-lg rounded ">
                         <img src="" alt="" id="winePhoto" className="img-responsive img-fluid" />
                     </div>

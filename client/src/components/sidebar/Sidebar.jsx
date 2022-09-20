@@ -1,14 +1,19 @@
+import "./sidebar.css";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
-import "./sidebar.css";
+import { ExternalLink } from "react-external-link";
+import { FaFacebook } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
 
 const Sidebar = () => {
   const { user, dispatch } = useContext(Context);
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
-    window.location.replace("/");
+    window.location.replace("/blog");
   };
 
   return (
@@ -28,10 +33,18 @@ const Sidebar = () => {
       <div className="sidebarItem">
         <span className="sidebarTitle">FOLLOW US</span>
         <div className="sidebarSocial">
-          <i className="sidebarIcon fa-brands fa-square-facebook"></i>
-          <i className="sidebarIcon fa-brands fa-square-twitter"></i>
-          <i className="sidebarIcon fa-brands fa-square-pinterest"></i>
-          <i className="sidebarIcon fa-brands fa-square-instagram"></i>
+          <ExternalLink href="https://www.facebook.com/">
+            <FaFacebook className="sidebarIcon" />
+          </ExternalLink>
+          <ExternalLink href="https://www.youtube.com/">
+            <FaYoutube className="sidebarIcon" />
+          </ExternalLink>
+          <ExternalLink href="https://www.instagram.com/">
+            <FaInstagramSquare className="sidebarIcon" />
+          </ExternalLink>
+          <ExternalLink href="https://www.twitter.com/">
+            <FaTwitterSquare className="sidebarIcon" />
+          </ExternalLink>
         </div>
       </div>
       <div className="sidebarItem">
@@ -53,7 +66,7 @@ const Sidebar = () => {
                 </Link>
               </li>
               <li className="linkItem">
-                <Link className="link" to="/write">
+                <Link className="link" to="/publish">
                   PUBLISH
                 </Link>
               </li>

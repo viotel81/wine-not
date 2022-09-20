@@ -1,31 +1,35 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: var(--ff-primary);
-  }
-  
-  :root {
-    --clr-light-1: #f9f9ec;
-    --clr-light-2: #f5f7e4;
-    --clr-accent-1: #69925a;
-    --clr-accent-2: #344814;
-    --clr-dark-1: #13180c;
-  
-    --ff-primary: 'Outfit', sans-serif;
-  }
-  
-  body {
-    color: var(--clr-dark-1);
-    text-align: center;
-  }
-  
-  /* TopBar*/
-  
   .topbar {
-    background-color: var(--clr-light-1);
+    background-color: var(--bg-medium);
+    font-size: 1.2rem;
   }
-  
+
+  .navbar-brand {
+    width: 30%;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+  }
+
   .topMenuCategory {
     margin: 0 20px;
+  }
+
+  .topMenuCategory:hover {
+    color: var(--clr-links-hover);
+  }
+
+  .icon {
+    font-size: 25px;
+    color: var(--clr-links);
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .icon:hover{
+    color: var(--clr-links-hover);
   }
