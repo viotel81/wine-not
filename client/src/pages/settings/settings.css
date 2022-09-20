@@ -88,3 +88,7 @@
     color: var(--clr-links);
     font-weight: 700;
 }
+
+.settingsBack span:hover {
+    color: var(--clr-links-hover);
+}

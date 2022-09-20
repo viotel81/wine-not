@@ -30,13 +30,13 @@ const Registration = () => {
         <Modal.Body>
           <Form>
             <Form.Group className="form-group mb-3" controlId="formBasicName">
-              <input type="text" placeholder="Your name" required />
+              <input type="text" placeholder="Your name" autoFocus required />
             </Form.Group>
             <Form.Group className="form-group mb-3" controlId="formBasicEmail">
-              <input type="email" placeholder="Your email" required />
+              <input type="email" placeholder="Your email" autofocus required />
             </Form.Group>
             <Form.Group className="form-group mb-3" controlId="formBasicMessage">
-              <textarea type="text" placeholder="Message" required />
+              <textarea type="text" placeholder="Message" autoFocus required />
             </Form.Group>
           </Form>
         </Modal.Body>

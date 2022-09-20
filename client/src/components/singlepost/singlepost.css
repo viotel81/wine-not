@@ -33,13 +33,21 @@
 
 .editIcon {
     cursor: pointer;
-    color: var(--btn-main);
+    color: var(--clr-links);
+}
+
+.editIcon:hover {
+    color: var(--clr-links-hover);
 }
 
 .trashIcon {
     cursor: pointer;
     color: #E6BA95;
     margin-left: 10px;
+}
+
+.trashIcon:hover {
+    color: tomato;
 }
 
 .singlePostDate {
@@ -75,6 +83,10 @@
 .singlePostBack span {
     color: var(--clr-links);
     font-weight: 700;
+}
+
+.singlePostBack span:hover {
+    color: var(--clr-links-hover);
 }
 
 .editTitle {
@@ -120,4 +132,9 @@
     color: var(--clr-secondary);
     cursor: pointer;
     align-self: flex-end;
+}
+
+.saveChangesButton:hover {
+    background-color: var(--btn-hover);
+    color: var(--clr-primary);
 }

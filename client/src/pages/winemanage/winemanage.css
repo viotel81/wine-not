@@ -73,3 +73,8 @@
     font-weight: 700;
     cursor: pointer;
 }
+
+.manageSubmit:hover {
+    background-color: var(--btn-hover);
+    color: var(--clr-primary);
+}
