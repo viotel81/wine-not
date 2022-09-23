@@ -13,7 +13,7 @@ function Slider() {
         />
         <Carousel.Caption>
           <div className="col-md-8 col-sm-12 slide1">
-            <h1>Wine-not taste the best wine</h1>            
+            <h1 className="p-5">Wine-not taste the best wine</h1>            
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -25,7 +25,7 @@ function Slider() {
         />
         <Carousel.Caption>
           <div className="col-md-6 col-sm-12 slide2">
-            <h1>ABOUT US</h1>
+            <h1 className="mb-4">ABOUT US</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
               aliquid ea rem veritatis quod, labore earum! Sunt iste tempore

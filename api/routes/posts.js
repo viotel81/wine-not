@@ -79,6 +79,36 @@ router.get("/:id", async (req, res) => {
 //get all posts
 router.get("/", async (req, res) => {
     const username = req.query.user;
+    // const page = parseInt(req.query.page);
+    // const limit = parseInt(req.query.limit);
+
+    // const startIndex = (page - 1) * limit;
+    // const endIndex = page * limit;
+
+    // const paginatedPosts = {};
+
+    // if (endIndex < await Post.countDocuments().exec()) {
+    //     paginatedPosts.next = {
+    //         page: page + 1,
+    //         limit: limit
+    //     }
+    // }
+
+    // if (startIndex > 0) {
+    //     paginatedPosts.previous = {
+    //         page: page - 1,
+    //         limit: limit
+    //     }
+    // }
+
+    // try {
+    //     paginatedPosts.paginatedPosts = await Post.find().limit(limit).skip(startIndex).exec();
+    //     res.json(paginatedPosts);
+    //     next();
+    // } catch (err) {
+    //     res.status(500).json(err);
+    // }
+
     try {
         let posts;
         if (username) {
