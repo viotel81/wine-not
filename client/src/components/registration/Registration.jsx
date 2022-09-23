@@ -1,13 +1,50 @@
 import "./registration.css";
 import { useState } from "react";
+import axios from "axios";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+
+
 
 const Registration = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+//   const [customer] = useState({
+//     name: "", email: "", message: "",
+// });
+
+//   const handleSubmit = () => {
+//   const headers = new Headers();
+//   headers.append("Content-type", "application/json");
+//   fetch("http://localhost:5001/api/registrations", {
+//       method: "POST",
+//       headers: headers,
+//       body: JSON.stringify(customer)
+//   }).then((response) => {
+//       response.json().then((body) =>
+//           alert(body.response));
+//   });
+// }
+
+const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [message, setMessage] = useState("");
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  const newRegistration = {
+    name,
+    email,
+    message,
+  };
+  try {
+    const res = await axios.post("/registrations", newRegistration);
+  } catch (err) {}
+};
+
 
   return (
     <div>
@@ -28,15 +65,15 @@ const Registration = () => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <Form method="post" onSubmit={handleSubmit}>
             <Form.Group className="form-group mb-3" controlId="formBasicName">
-              <input type="text" placeholder="Your name" autoFocus required />
+              <input type="text" placeholder="Your name" onChange={(e) => setName(e.target.value)} autoFocus required />
             </Form.Group>
             <Form.Group className="form-group mb-3" controlId="formBasicEmail">
-              <input type="email" placeholder="Your email" autofocus required />
+              <input type="email" placeholder="Your email" onChange={(e) => setEmail(e.target.value)} autofocus required />
             </Form.Group>
             <Form.Group className="form-group mb-3" controlId="formBasicMessage">
-              <textarea type="text" placeholder="Message" autoFocus required />
+              <textarea type="text" placeholder="Message" onChange={(e) => setMessage(e.target.value)} autoFocus required />
             </Form.Group>
           </Form>
         </Modal.Body>
@@ -44,7 +81,7 @@ const Registration = () => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" type="submit" onClick={handleClose}>
             Send
           </Button>
         </Modal.Footer>

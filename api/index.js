@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
+const registrationRoute = require("./routes/registered");
 const multer = require("multer");
 const path = require("path");
 
@@ -33,6 +34,7 @@ app.use("/images", express.static(path.join(__dirname, "/images")));
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
+app.use("/api/registered", registrationRoute);
 
 app.listen(5001, () => {
     console.log("Backend server is running")

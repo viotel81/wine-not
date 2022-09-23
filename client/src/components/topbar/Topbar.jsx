@@ -12,7 +12,9 @@ function Topbar() {
   return (
     <Navbar expand="lg" sticky="top" className="topbar">
       <Container>
-        <Navbar.Brand href="/">wine-not</Navbar.Brand>
+        <Navbar.Brand href="/">
+        <img src="./images/logo.png" alt="logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <div className="navbar">
