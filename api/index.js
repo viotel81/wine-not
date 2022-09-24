@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
+const wineRoute = require("./routes/wines");
 const registrationRoute = require("./routes/registrations");
 const multer = require("multer");
 const path = require("path");
@@ -34,6 +35,7 @@ app.use("/images", express.static(path.join(__dirname, "/images")));
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
+app.use("/api/wines", wineRoute);
 app.use("/api/registrations", registrationRoute);
 
 app.listen(5001, () => {

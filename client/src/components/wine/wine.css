@@ -17,5 +17,34 @@
 #wineRow {
   background-color: var(--bg-medium);
   min-height: 40vh;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.updateWineIcons {
+  display: flex;
+  justify-content: end;
+}
+.editIcon {
+  cursor: pointer;
+  color: var(--btn-main);
+}
+
+.trashIcon {
+  cursor: pointer;
+  color: #E6BA95;
+  margin-left: 10px;
+}
+
+.fa-solid {
+  font-size: 25px;
+}
+
+.updateTitle, .updateDescription, .updatePrice {
+ background-color: var(--bg-medium);
+ border: none;
+ text-align: center;
+}
+
+.wineInfo {
+  display: grid;
 }

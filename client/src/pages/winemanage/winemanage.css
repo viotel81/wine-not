@@ -62,6 +62,13 @@
     width: 20%;
 }
 
+.manageFooter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .manageSubmit {
     width: 100px;
     background-color: var(--btn-main);
@@ -77,4 +84,21 @@
 .manageSubmit:hover {
     background-color: var(--btn-hover);
     color: var(--clr-primary);
+}
+
+.catalogueBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.backIcon {
+    margin-right: 8px;
+    color: var(--clr-links);
+}
+
+.catalogueBack span {
+    color: var(--clr-links);
+    font-weight: 700;
 }
