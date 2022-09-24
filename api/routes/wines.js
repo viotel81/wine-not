@@ -2,7 +2,7 @@ const router = require("express").Router();
 const Wine = require("../models/Wine");
 
 // Add new wine to catalogue
-router.post("/", async (req,res) => {
+router.post("/", async (req, res) => {
     const newWine = new Wine(req.body);
     try {
         const savedWine = await newWine.save();
@@ -14,26 +14,26 @@ router.post("/", async (req,res) => {
 
 // Update existing wine
 
-router.put('/:id', async (req, res) =>{
-    try{
+router.put('/:id', async (req, res) => {
+    try {
         const wine = await Wine.findById(req.params.id);
-        if(wine.username === req.body.username){
+        if (wine.username === req.body.username) {
             try {
                 const updatedWine = await Wine.findByIdAndUpdate(
                     req.params.id,
                     {
                         $set: req.body,
                     },
-                    { new: true}
+                    { new: true }
                 );
                 res.status(200).json(updatedWine);
-            }catch(err){
+            } catch (err) {
                 res.status(500).json(err)
             }
         } else {
             res.status(401).json("You only can update Your added wine!")
         }
-    } catch(err) {
+    } catch (err) {
         res.status(500).json(err)
     }
 })
@@ -44,12 +44,12 @@ router.delete('/:id', async (req, res) => {
     try {
         const wine = await Wine.findById(req.params.id);
         if (wine.username === req.body.username) {
-                await wine.delete();
-                res.status(200).json("Your wine has been deleted")
+            await wine.delete();
+            res.status(200).json("Your wine has been deleted")
         } else {
             res.status(403).json("You only can delete Your added wine!")
         }
-    } catch(err) {
+    } catch (err) {
         res.status(500).json(err)
     }
 })
@@ -59,8 +59,9 @@ router.delete('/:id', async (req, res) => {
 router.get("/:id", async (req, res) => {
     try {
         const wine = await Wine.findById(req.params.id);
+        console.log(wine);
         res.status(500).json(wine)
-    } catch(err) {
+    } catch (err) {
         res.status(500).json(err);
     }
 });

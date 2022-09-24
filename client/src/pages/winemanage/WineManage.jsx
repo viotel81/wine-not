@@ -32,7 +32,7 @@ function Manage() {
       }catch(err) {}
     }
     try {
-       const res = await axios.post("/wines", newWine );
+       await axios.post("/wines", newWine );
        window.location.replace("/catalogue")
     } catch(err) {}
   };
@@ -99,3 +99,4 @@ function Manage() {
 }
 
 export default Manage;
+

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import CatalogueHeader from "../../components/catalogueheader/CatalogueHeader";
 import Wines from "../../components/wines/Wines";
-import WineManage from "../winemanage/WineManage";
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
 

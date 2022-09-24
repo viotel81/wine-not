@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Wine from '../wine/Wine';
 import './wines.css';
 
