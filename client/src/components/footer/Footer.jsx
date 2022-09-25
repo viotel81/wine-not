@@ -6,6 +6,8 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { Container } from "react-bootstrap";
 import { useContext } from "react";
 import { Context } from "../../context/Context";
+import { useState } from "react";
+import axios from "axios";
 
 const Footer = () => {
   const { user, dispatch } = useContext(Context);
@@ -13,6 +15,19 @@ const Footer = () => {
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
     window.location.replace("/");
+  };
+
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const newSubscribtion = {
+      email,
+    };
+    try {
+      await axios.post("/subscribtions", newSubscribtion);
+      window.location.replace("/");
+    } catch (err) { }
   };
 
   return (
@@ -105,8 +120,24 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        <div className="p-1 w-100 d-flex">
+        <div class="container p-4 text-center">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase menuTitle">Sign up for our newsletter</h5>
+            </div>
+            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+              <form action="" onSubmit={handleSubmit} className="d-flex">
+                <input type="email" className="form-control"
+                  placeholder="Enter email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  autoFocus
+                  required />
+                <button type="submit" className="btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div className="row p-1 w-100 d-flex">
           <p className="bottomLine w-100 text-center">
             Copyright &copy;{" "}
             <Link to="/" className="link">
@@ -115,7 +146,7 @@ const Footer = () => {
           </p>
         </div>
       </Container>
-    </footer>
+    </footer >
   );
 };
 

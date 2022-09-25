@@ -7,6 +7,7 @@ const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
 const wineRoute = require("./routes/wines");
 const registrationRoute = require("./routes/registrations");
+const subscribtiontionRoute = require("./routes/subscribtions");
 const multer = require("multer");
 const path = require("path");
 
@@ -37,6 +38,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/wines", wineRoute);
 app.use("/api/registrations", registrationRoute);
+app.use("/api/subscribtions", subscribtiontionRoute);
 
 app.listen(5001, () => {
     console.log("Backend server is running")
