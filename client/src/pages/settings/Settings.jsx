@@ -1,5 +1,7 @@
 import "./settings.css";
 import axios from "axios";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 import { Context } from "../../context/Context";
 import { useContext, useState } from "react";
 import { Container } from "react-bootstrap";
@@ -11,6 +13,11 @@ export default function Settings() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [success, setSuccess] = useState(false);
+  const [failure, setFailure] = useState(false);
+
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,6 +33,7 @@ export default function Settings() {
       setSuccess(true);
       dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
     } catch (err) {
+      setFailure(true);
       dispatch({ type: "UPDATE_FAILURE" });
     }
   };
@@ -56,7 +64,11 @@ export default function Settings() {
             required
           />
           <div className="settingsFooter">
-            <button className="settingsSubmit" type="submit">
+            <button
+              className="settingsSubmit"
+              type="submit"
+              onClick={handleShow}
+            >
               Update
             </button>
             <div className="settingsBack">
@@ -66,8 +78,35 @@ export default function Settings() {
               </Link>
             </div>
           </div>
-          {success && (
-            <span className="profileUpdated">Profile is updated!</span>
+          {success ? (
+            <Modal
+              className="modalSuccess"
+              show={show}
+              onHide={handleClose}
+              animation={false}
+            >
+              <Modal.Body>Changes saved successfully!</Modal.Body>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+            </Modal>
+          ) : (
+            failure
+          )}
+          {failure && (
+            <Modal
+              className="modalFailure"
+              show={show}
+              onHide={handleClose}
+              animation={false}
+            >
+              <Modal.Body>
+                Please check the values provided and try again!
+              </Modal.Body>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+            </Modal>
           )}
         </form>
       </div>

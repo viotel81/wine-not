@@ -92,3 +92,34 @@
 .settingsBack span:hover {
     color: var(--clr-links-hover);
 }
+
+.modalSuccess button,
+.modalFailure button {
+    width: 20%;
+    margin: 20px auto;
+}
+
+.modalFailure .modal-content {
+    background-color: rgb(210, 134, 134);
+}
+
+.modalSuccess .modal-body,
+.modalFailure .modal-body {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .settings {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .settingsForm {
+        align-items: center;
+    }
+
+    .settingsUpdateTitle {
+        text-align: center;
+    }
+}

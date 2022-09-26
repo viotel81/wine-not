@@ -12,6 +12,7 @@ import './App.css';
 import { useContext } from 'react';
 import { Context } from './context/Context';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from './components/scrolltotop/ScrollToTop';
 
 
 function App() {
@@ -19,18 +20,20 @@ function App() {
 
   return (
     <Router>
-      <Topbar />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/blog" element={<Blog />}></Route>
-        <Route path="/catalogue" element={<WineCatalogue />}></Route>
-        <Route path="/login" element={user ? <Blog /> : <Login />}></Route>
-        <Route path="/publish" element={user ? <Publish /> : <Login />}></Route>
-        <Route path="/addwine" element={user ? <WineManage /> : <Login />}></Route>
-        <Route path="/settings" element={user ? <Settings /> : <Login />}></Route>
-        <Route path="/post/:postId" element={<Single />}></Route>
-      </Routes>
-      <Footer />
+      <ScrollToTop>
+        <Topbar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/catalogue" element={<WineCatalogue />}></Route>
+          <Route path="/login" element={user ? <Blog /> : <Login />}></Route>
+          <Route path="/publish" element={user ? <Publish /> : <Login />}></Route>
+          <Route path="/addwine" element={user ? <WineManage /> : <Login />}></Route>
+          <Route path="/settings" element={user ? <Settings /> : <Login />}></Route>
+          <Route path="/post/:postId" element={<Single />}></Route>
+        </Routes>
+        <Footer />
+      </ScrollToTop>
     </Router>
   );
 }

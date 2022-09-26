@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "../../context/Context";
+import ModalConfirmation from "../../modalconfirmation/ModalConfirmation";
 
 const SinglePost = () => {
   const location = useLocation();
@@ -15,6 +16,9 @@ const SinglePost = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [updateMode, setUpdateMode] = useState(false);
+  const [displayConfirmationModal, setDisplayConfirmationModal] =
+    useState(false);
+  const [deleteMessage, setDeleteMessage] = useState(null);
 
   useEffect(() => {
     const getPost = async () => {
@@ -26,12 +30,22 @@ const SinglePost = () => {
     getPost();
   }, [path]);
 
-  const handleDelete = async () => {
+  const handleDelete = () => {
+    setDeleteMessage("Are you sure you want to delete this post?");
+    setDisplayConfirmationModal(true);
+  };
+
+  const hideConfirmationModal = () => {
+    setDisplayConfirmationModal(false);
+  };
+
+  const submitDelete = async () => {
     try {
       await axios.delete(`/posts/${post._id}`, {
         data: { username: user.username },
       });
-      window.location.replace("/");
+      window.location.replace("/blog");
+      setDisplayConfirmationModal(false);
     } catch (err) {}
   };
 
@@ -92,18 +106,25 @@ const SinglePost = () => {
       ) : (
         <p className="singlePostText">{description}</p>
       )}
-      {updateMode ? (
-        <button className="saveChangesButton" onClick={handleUpdate}>
-          Update
-        </button>
-      ) : (
+      <div className="singlePostFooter">
+        {updateMode && (
+          <button className="saveChangesButton" onClick={handleUpdate}>
+            Update
+          </button>
+        )}
         <div className="singlePostBack">
           <Link className="link" to={"/blog"}>
             <i className="backIcon fa-solid fa-arrow-left"></i>
             <span>Back to Blog</span>
           </Link>
         </div>
-      )}
+      </div>
+      <ModalConfirmation
+        showModal={displayConfirmationModal}
+        confirmModal={submitDelete}
+        hideModal={hideConfirmationModal}
+        message={deleteMessage}
+      />
     </div>
   );
 };

@@ -7,3 +7,10 @@
     margin: 20px;
 }
 
+
+@media (max-width: 768px) {
+    .posts {
+        flex: auto;
+        margin: 20px 0;
+    }
+}

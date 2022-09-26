@@ -66,3 +66,23 @@
     background-color: var(--btn-hover);
     color: var(--clr-primary);
 }
+
+@media (max-width: 768px) {
+    .post {
+        margin-bottom: 20px;
+    }
+
+    .postContent {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .postImg {
+        margin-right: unset;
+    }
+
+    .postTitle {
+        font-size: 1.5rem;
+    }
+}

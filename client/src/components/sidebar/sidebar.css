@@ -85,8 +85,10 @@
     font-weight: 700;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .sidebar {
-        display: none;
+        flex: auto;
+        margin: unset;
+        margin-bottom: 20px;
     }
-} */
+}
