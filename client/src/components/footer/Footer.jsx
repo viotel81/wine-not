@@ -120,12 +120,12 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div class="container p-4 text-center">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase menuTitle">Sign up for our newsletter</h5>
+        <div className="container p-4 text-center">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 className="text-uppercase menuTitle">Sign up for our newsletter</h5>
             </div>
-            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
               <form action="" onSubmit={handleSubmit} className="d-flex">
                 <input type="email" className="form-control"
                   placeholder="Enter email"
