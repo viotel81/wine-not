@@ -1,4 +1,4 @@
-.posts {
+.searchResults {
     flex: 9;
     display: flex;
     align-items: flex-start;
@@ -7,8 +7,13 @@
     margin: 20px;
 }
 
+.noPosts {
+    color: var(--clr-links);
+    font-size: 1.5rem;
+}
+
 @media (max-width: 768px) {
-    .posts {
+    .searchResults {
         flex: auto;
         margin: 20px 0;
     }

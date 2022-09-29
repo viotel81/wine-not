@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "../../context/Context";
-import ModalConfirmation from "../../modalconfirmation/ModalConfirmation";
+import ModalConfirmation from "../../components/modalconfirmation/ModalConfirmation";
 
 const SinglePost = () => {
   const location = useLocation();

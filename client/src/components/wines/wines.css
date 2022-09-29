@@ -1,7 +1,7 @@
 .winesmain {
   background-color: var(--bg-light);
   min-height: 65vh;
-  width: 100%;  
+  width: 100%;
 }
 
 .winesmain h3 {
@@ -10,8 +10,26 @@
   text-align: center;
   margin: 0;
   padding: 1em;
-  color: var(--bg-dark);
+  color: var(--clr-primary);
   font-family: var(--ff-titles);
   font-style: italic;
 }
 
+.mySwiper {
+  margin-bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--btn-main) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--btn-main) !important;
+}
+
+@media (max-width: 768px) {
+  .winesmain h3 {
+    font-size: 1.6rem;
+  }
+}

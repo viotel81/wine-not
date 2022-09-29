@@ -1,0 +1,31 @@
+.searchContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.search {
+    margin: 30px 0px 20px 0px;
+    min-width: 350px;
+    width: 30%;
+}
+
+#search:focus {
+    background-color: var(--bg-light);
+    outline: none;
+}
+
+#search-addon {
+    cursor: auto;
+    background-color: var(--btn-main);
+    color: var(--clr-secondary);
+}
+
+@media (max-width: 768px) {
+    .search {
+        margin: 30px auto 20px auto;
+        width: 90%;
+    }
+}

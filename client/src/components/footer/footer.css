@@ -20,4 +20,9 @@
     color: var(--clr-links);
     margin-right: 10px;
     cursor: pointer;
-}
+  }
+
+  .myMap {
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }

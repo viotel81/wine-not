@@ -25,6 +25,7 @@
     object-fit: cover;
     filter: blur(1px);
     -webkit-filter: blur(1px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {

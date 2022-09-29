@@ -9,8 +9,7 @@ const RegistrationSchema = new mongoose.Schema({
     email: {
         type: String,
         max: 50,
-        required: true,
-        unique: true
+        required: true        
     },
     message: {
         type: String,

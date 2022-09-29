@@ -37,6 +37,7 @@
     height: 300px;
     object-fit: cover;
     border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sidebarItem>p {

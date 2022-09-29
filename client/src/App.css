@@ -38,3 +38,15 @@ body {
 .link:hover {
     color: var(--clr-links);
 }
+
+.btn {
+    background-color: var(--btn-main);
+    border: none;
+    color: var(--clr-secondary);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+    color: var(--clr-primary);
+}

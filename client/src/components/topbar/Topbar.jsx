@@ -13,7 +13,7 @@ function Topbar() {
     <Navbar expand="lg" sticky="top" className="topbar">
       <Container>
         <Navbar.Brand href="/">
-        <img src="./images/logo.png" alt="logo" />
+        <img src="../images/logo.png" alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

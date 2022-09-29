@@ -32,9 +32,13 @@ export default function Settings() {
       const res = await axios.put("/users/" + user._id, updatedUser);
       setSuccess(true);
       dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
+      setPassword("");
     } catch (err) {
       setFailure(true);
       dispatch({ type: "UPDATE_FAILURE" });
+      setUsername("");
+      setEmail("");
+      setPassword("");
     }
   };
 
@@ -46,6 +50,7 @@ export default function Settings() {
           <label htmlFor="">Username</label>
           <input
             type="text"
+            value={username}
             placeholder={user.username}
             onChange={(e) => setUsername(e.target.value)}
             required
@@ -53,6 +58,7 @@ export default function Settings() {
           <label htmlFor="">Email</label>
           <input
             type="email"
+            value={email}
             placeholder={user.email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -60,6 +66,7 @@ export default function Settings() {
           <label htmlFor="">Password</label>
           <input
             type="password"
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
@@ -74,7 +81,7 @@ export default function Settings() {
             <div className="settingsBack">
               <Link className="link" to={"/blog"}>
                 <i className="backIcon fa-solid fa-arrow-left"></i>
-                <span>Back to Blog</span>
+                <span>Back</span>
               </Link>
             </div>
           </div>
