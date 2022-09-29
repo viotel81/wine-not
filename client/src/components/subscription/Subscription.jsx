@@ -35,7 +35,7 @@ const Subscription = () => {
           type="email"
           value={email}
           className="form-control"
-          placeholder="Enter email"
+          placeholder="Enter Email"
           onChange={(e) => setEmail(e.target.value)}
           autoFocus
           required

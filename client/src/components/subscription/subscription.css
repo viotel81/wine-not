@@ -25,7 +25,7 @@
 
 .subscriptionForm input:focus {
     outline: none;
-    background-color: var(--bg-medium);
+    background-color: var(--bg-light);
 }
 
 .subscriptionForm button {
